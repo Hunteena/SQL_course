@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS perfomer_album (
 CREATE TABLE IF NOT EXISTS tracks (
 	id serial PRIMARY KEY,
 	title varchar(40) NOT NULL,
-	track_length time,
+	track_length integer,
 	album_id integer REFERENCES albums(id)
 );
 CREATE TABLE IF NOT EXISTS collections (
