@@ -82,3 +82,7 @@ INSERT INTO track_collection (collection_id, track_id) VALUES
 	(6, 11),
 	(7, 12), (7, 13),
 	(8, 14);
+-- Additional album
+INSERT INTO albums (id, title, released) VALUES (14, 'PAUSA', 2020);
+INSERT INTO perfomer_album (performer_id, album_id) VALUES (5, 14);
+INSERT INTO tracks (id, title, track_length, album_id) VALUES (18, 'Simple', 215, 14);
